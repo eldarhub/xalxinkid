@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --yellow-color: #FDC02A;
+    --green-color: #CEEB45;
+    --darkblue-color: #0D0033;
+    --darkgray-ton: #3B3C3C;
+    --greytone2-color:#E8E9E9;
+    --greytone1-color:#4D5157;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-start-section {
+    /* width:100%;   */
+    margin: auto;
+    background-color: var(--green-color);
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+}
+
+.container-ui-design {
+    width: min-content;
+    position: relative;
+    /* Üçbucağın üstündə qalması üçün */
+    z-index: 3;
+}
+
+.container-header-slogan-buttons {
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* Üçbucağın üstündə qalması üçün */
+    z-index: 2;
+    /* border-right: 400px solid transparent;
+    border-bottom: 600px solid white; */
+
+}
+
+.header {
+    position: relative;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.slogan {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 30px 0 0 0;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 30px 0 0 0;
+}
+
+.buttons a div img {
+    width: 2.9rem;
+}
+
+.buttons a {
+    width: 280px;
+    background-color: white;
+    border: 1px white solid;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    gap: 10px;
+
+}
+
+.buttons a:hover {
+    text-decoration: none;
+}
+
+.button-txt-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.download-txt {
+    font-size: 1rem;
+    font-weight: 300;
+    color: black;
+}
+
+.app-txt {
+    font-size: 2rem;
+    font-weight: 400;
+    color: black;
+}
+
+.get-txt {
+    font-size: 1rem;
+    font-weight: 200;
+    color: black;
+}
+
+.googleplay-txt {
+    font-size: 2rem;
+    font-weight: 400;
+    color: black;
+}
+
+.header p::before {
+    background-image: url('img/graduation-hat.png');
+    background-size: cover;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-30deg);
+    top: -50px;
+    left: -58px;
+}
+
+.middle-container-section {
+    margin: auto;
+    margin-top: 100px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    position: relative;
+
+}
+
+.app-ui-info-section {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.info-text-container {
+    width: 500px;
+}
+
+.info-text-container h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+}
+
+.info-text-container p {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.card-header .btn:focus,
+.card-header .btn:hover {
+    outline: none;
+    box-shadow: none;
+}
+
+.faq-container {
+    margin: auto;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.faq-container h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 4rem;
+
+}
+
+.accordion .card {
+    border-radius: 15px;
+    border: none;
+    width: 900px;
+    margin-top: 10px;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 200px; */
+
+}
+
+.card p {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--darkgray-ton);
+}
+.card .btn-link i{
+color: var(--greytone1-color);
+}
+.card .btn-link{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--greytone2-color);
+    
+}
+
+.footer-part2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+.app-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 15px;
+}
+
+/* .app-name span,
+ p {
+    font-size: 16px;
+
+} */
+
+.logo-text {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.logo-text::after {
+    background-image: url('img/graduation-hat.png');
+    background-size: cover;
+    content: "";
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    transform: rotate(-30deg);
+    top: -10px;
+    left: -70px;
+    position: absolute;
+}
+.terms-and-condition{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+}
+.terms-and-condition p{
+    font-weight: 600;
+}
+.picture{
+    width: 40px;
+    height: 40px;
+}
+.picture a img{
+    width: 100%;
+}
+.media-pics{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.medias{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
